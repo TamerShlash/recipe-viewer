@@ -1,0 +1,33 @@
+<% title_as(@recipe.title) %>
+<main>
+  <div class="bg-white">
+    <div class="py-5 container">
+      <h1 class="fw-light">
+        <a href="/" class="text-reset">All Weekly Recipes</a>
+      </h1>
+    </div>
+  </div>
+
+  <div class="py-5 container marketing">
+    <div class="row featurette">
+      <div class="col-md-6">
+        <h2 class="featurette-heading"><%= @recipe.title %></h2>
+        <h3 class="text-muted"><%= recipe_chef(@recipe) %></h3>
+        <div class="lead py-5">
+          <%= recipe_desc(@recipe) %>
+        </div>
+        <div class="fs-4">
+          <% recipe_tags(@recipe).each do |tag| %>
+            <span class="badge bg-secondary"><%= tag %></span>
+          <% end %>
+        </div>
+      </div>
+      <div class="col-md-5">
+        <%= image_tag recipe_photo(@recipe), class: 'featurette-image img-fluid mx-auto', width: '600' %>
+        <div class="text-center fs-4 pt-4">
+          <span class="badge bg-success"><%= recipe_calories(@recipe) %></span>
+        </div>
+      </div>
+    </div>
+  </div>  
+</main>

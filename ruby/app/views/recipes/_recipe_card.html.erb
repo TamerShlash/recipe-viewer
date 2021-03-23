@@ -1,0 +1,8 @@
+<div class="col-auto" style="max-width: 500px">
+  <div class="card h-100 shadow-sm">
+    <%= image_tag recipe_photo(recipe) %>
+    <div class="card-body">
+      <p class="card-text lead"><%= link_to recipe.title, recipe_url(recipe), class: 'stretched-link text-decoration-none text-reset' %></p>
+    </div>
+  </div>
+</div>
