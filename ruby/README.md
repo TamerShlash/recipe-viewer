@@ -1,7 +1,8 @@
 # README
 
-This is a simple application to fetch recipes from Contentful and display them as described in the challenge. I tried to make it as realistic as possible both inside and outside, but it still could use a few improvements, suc has:
+This is a simple application to fetch recipes from Contentful and display them as described in the challenge. I tried to make it as realistic as possible both inside and outside, but it still could use a few improvements, such has:
 
+* Custom error pages
 * Caching views
 * Using the Synchronization feature offered by Contentful instead of fetching data on every request. This might be handy since the recipes are updated every week only.
 
