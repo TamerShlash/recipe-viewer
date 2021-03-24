@@ -14,7 +14,7 @@ I have not invested time in any of these improvements, nor in testing, because o
 
 ## Environment Variables
 
-This app requires 2 environment variables: `CONTENTFUL_SPACE` and `CONTENTFUL_TOKEN`. I've added `dotenv-rails` for development and testing, so 
+This app requires 2 environment variables: `CONTENTFUL_SPACE` and `CONTENTFUL_TOKEN`. I've added `dotenv-rails` for development and testing, so feel free to use the `.env` file.
 
 ## Running
 
