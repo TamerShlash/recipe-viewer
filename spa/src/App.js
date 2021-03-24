@@ -1,6 +1,5 @@
 import {BrowserRouter as Router, Switch, Route} from "react-router-dom";
 import { ContentfulClient, ContentfulProvider } from 'react-contentful';
-import './App.css';
 import RecipeList from './RecipeList';
 import RecipeView from './RecipeView';
 

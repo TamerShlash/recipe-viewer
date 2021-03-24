@@ -41,7 +41,7 @@ function RecipeView() {
           <div className="col-md-6">
             <h2 className="featurette-heading">{data.fields.title}</h2>
             <h3 className="text-muted">{recipeChef(data)}</h3>
-            <div className="lead py-5">{recipeDesc(data)}</div>
+            <div className="lead py-5" dangerouslySetInnerHTML={{__html: recipeDesc(data)}}></div>
             <div className="fs-4">
               {recipeTags(data).map((tag) => <span key={tag} className="badge bg-secondary">{tag}</span>)}
             </div>

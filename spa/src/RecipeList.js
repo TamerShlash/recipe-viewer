@@ -20,7 +20,6 @@ function RecipePreview({recipe}) {
 }
 
 function List({recipes}) {
-  console.log(recipes);
   return (
     <main>
       <div className="bg-white">

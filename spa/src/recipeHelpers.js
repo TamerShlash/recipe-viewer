@@ -21,7 +21,7 @@ export function recipeChef(recipe) {
 }
 
 export function recipeDesc(recipe) {
-  marked(recipe.fields.description);
+  return marked(recipe.fields.description);
 }
 
 export function recipeTags(recipe) {
